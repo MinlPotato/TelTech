@@ -5,7 +5,6 @@ import Footer from '../Footer/Footer'
 function Informacion() {
   return (
     <>
-      <Header />
 
       <div className="container text-center">
         <div className="row gap-1">
@@ -150,7 +149,7 @@ function Informacion() {
         </div>
       </div>
 
-      <Footer />
+     
     </>
   );
 }

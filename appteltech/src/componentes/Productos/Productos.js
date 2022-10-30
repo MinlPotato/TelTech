@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../Header/Header";
 import Logo from "../Assets/LogoTeltech2.png";
-import AllProductos from "../Funciones/Funciones";
+import {AllProductos} from "../Funciones/Funciones";
 import { useEffect, useState } from "react";
 import Footer from "../Footer/Footer";
 import Card from "../Card/Card";
@@ -15,20 +15,20 @@ const Productos = () => {
 
   return (
     <>
-      <Header />
       <h1 className="text-center py-5">Telescopios</h1>
       <div className="d-flex gap-4 flex-wrap justify-content-evenly">
-
-        {productos != null
-        ? productos.map((producto) => (
+        {productos != null ? (
+          productos.map((producto) => (
             <div key={producto.id}>
-              <Card info= {producto}/>
+              <Card info={producto} />
             </div>
           ))
-        : "no hay personajes"}
+        ) : (
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        )}
       </div>
-      
-      <Footer/>
     </>
   );
 };
