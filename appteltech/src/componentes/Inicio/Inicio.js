@@ -7,12 +7,11 @@ function Home() {
   
 
   return (
-    <>
-      <body className="body">
-
-
-      </body>
-    </>
+    
+    <div className="h-100 text-center">
+      <h1>Bienvenidos a TelTech</h1>
+    </div>
+    
   );
 }
 

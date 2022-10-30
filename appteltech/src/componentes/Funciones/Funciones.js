@@ -17,23 +17,21 @@ export function ActiveURL() {
       { name: "Informacion", href: "/informacion" },
     ];
 
-    return (
-        navigation.map((item) => (
-    <NavLink
-      key={item.name}
-      to={item.href}
-      className={({ isActive }) => {
-        return (
-          " nav-link text-decoration-none" +
-          (isActive ? "text-secondary disabled active" : "text-white")
-        );
-      }}
-    >
-      {item.name}
-    </NavLink>
-  ))
-    
-    )
+    return navigation.map((item) => (
+      <NavLink
+        key={item.name}
+        to={item.href}
+        style={{ fill: "#FFFFFF" }}
+        className={({ isActive }) => {
+          return (
+            " nav-link text-decoration-none " +
+            (isActive ? "disabled active" : "text-white")
+          );
+        }}
+      >
+        {item.name}
+      </NavLink>
+    ));
 
 }
  
