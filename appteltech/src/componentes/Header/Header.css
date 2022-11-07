@@ -1,0 +1,32 @@
+.show-animation {
+    animation: appear-top .3s ease-in-out forwards .1s;
+    transform: translateY(-100px);
+}
+
+@keyframes appear-top {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.hide-animation {
+    animation: hide-top .3s ease-in-out forwards .1s;
+}
+
+@keyframes hide-top {
+     90% {
+        transform: translateY(-100px);
+    }
+    100% {
+        display: none;
+    }
+}
+
+.blur {
+   backdrop-filter: blur(5px);
+   
+}

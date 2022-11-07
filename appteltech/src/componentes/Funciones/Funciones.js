@@ -3,7 +3,7 @@ import axios from "axios";
 import { NavLink } from 'react-router-dom';
 
 export const AllProductos = async (state) => {
-    const llamada = await axios.get("https://rickandmortyapi.com/api/character ")
+    const llamada = await axios.get(`https://rickandmortyapi.com/api/character${Math.random(Math.floor(20))}`)
     state(llamada.data.results)
 }
 
