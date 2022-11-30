@@ -1,0 +1,22 @@
+.buttonCenter {
+  width: 100%;
+  
+}
+
+.unzoom {
+   transition: ease-in-out .2s ;
+   
+}
+
+.unzoom:hover, .zoom:focus {
+    transform: scale(.9);
+}
+
+.zoom {
+   transition: ease-in-out .2s .15s ;
+   
+}
+
+.zoom:hover, .zoom:focus {
+    transform: scale(1.1);
+}

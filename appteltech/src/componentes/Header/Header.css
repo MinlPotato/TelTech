@@ -30,3 +30,42 @@
    backdrop-filter: blur(5px);
    
 }
+
+.carritoButton {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg,#FB7140,#FB9951);
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px 3px rgba(248, 161, 0, 0.182);
+    position: fixed;
+    z-index: 1;
+    transition: ease-in-out .2s  ;
+    
+}
+
+.carritoButton:hover {
+    transform: scale(1.1);
+}
+
+.carritoNumber {
+    width: 30px;
+    height: 25px;
+    background: linear-gradient(45deg,#fb0e55,#ed5665);
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px 3px rgba(248, 161, 0, 0.182);
+    position: fixed;
+    margin-left: 30px;
+    margin-top: -4px;
+    padding-bottom: 0px;
+    z-index: 1;
+}
+
+.colorHeader {
+    background: linear-gradient(45deg,#239FE9,#44D5F3)   ;
+    /* linear-gradient(rgb(0, 158, 206), rgb(0, 167, 218), rgb(0, 118, 154)) */
+   
+}
+
+.headerMargin {
+    margin-bottom: 0px ;
+}

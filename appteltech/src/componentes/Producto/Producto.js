@@ -26,13 +26,13 @@ function Producto() {
     <>
       {Producto != null ? (
         <>
-          <div className="container mb-2 card">
+          <div className="container my-2 card">
             <Breadcrumb className="d-flex align-items-center ">
               <Breadcrumb.Item>
                 <NavLink to="/productos">Productos</NavLink>
               </Breadcrumb.Item>
 
-              <Breadcrumb.Item active> {Producto.name} </Breadcrumb.Item>
+              <Breadcrumb.Item active> {Producto.nombre} </Breadcrumb.Item>
             </Breadcrumb>
           </div>
           <div className="d-flex justify-content-center card container">

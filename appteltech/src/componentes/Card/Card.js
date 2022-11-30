@@ -1,10 +1,12 @@
-import React from 'react'
+import React from "react";
 import { NavLink } from "react-router-dom";
 import ShopContext from "../ContextT/ShopContext";
+import { Card } from "react-bootstrap";
+import "./Card.css";
 
-function Card(props) {
+function Cards() {
+  return (
     <>
-    
       <ShopContext.Consumer>
         {(context) => (
           <React.Fragment>
@@ -12,18 +14,23 @@ function Card(props) {
               return (
                 <Card>
                   <div className="shadow" style={{ width: "200px" }}>
-                    {p.image == null ? (
+                    {p.imagen == null ? (
                       <img
                         src=""
                         alt="img"
                         className="card-img-top rounded"
                       ></img>
                     ) : (
-                      <NavLink to={`/Catalogo/${p.id}`}>
+                      <NavLink to={`/productos/${p.id}`}>
                         <img
-                          src={p.image}
+                          src={p.imagen}
                           alt="img"
                           className="card-img-top rounded unzoom"
+                          style={{
+                            objectFit: "cover",
+                            width: "230px",
+                            height: "230px",
+                          }}
                         ></img>
                       </NavLink>
                     )}
@@ -44,11 +51,8 @@ function Card(props) {
           </React.Fragment>
         )}
       </ShopContext.Consumer>
-    
-
     </>
-    
-  
+  );
 }
 
-export default Card
+export default Cards;
