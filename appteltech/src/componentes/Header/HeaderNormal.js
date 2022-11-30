@@ -1,6 +1,7 @@
 import React from 'react'
 import { ActiveURL } from '../Funciones/Funciones';
 import Logo from "../Assets/LogoTeltech2.png";
+import { NavLink } from 'react-router-dom';
 
 function HeaderNormal() {
   return (
@@ -25,12 +26,17 @@ function HeaderNormal() {
               </li>
             </ul>
             <div className="text-end px-2">
-              <button type="button" className="btn btn-light text-dark me-2">
+
+               <button type="button" className="btn btn-light text-dark me-2">
                 Login
               </button>
-              <button type="button" className="btn btn-primary">
+              <a href="/Login">
+                <button type="button" className="btn btn-primary">
                 Sign-up
               </button>
+              </a>
+             
+              
             </div>
           </div>
         </div>

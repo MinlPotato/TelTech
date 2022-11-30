@@ -1,27 +1,54 @@
 import React from 'react'
-
+import { NavLink } from "react-router-dom";
+import ShopContext from "../ContextT/ShopContext";
 
 function Card(props) {
+    <>
+    
+      <ShopContext.Consumer>
+        {(context) => (
+          <React.Fragment>
+            {context.products.map((p) => {
+              return (
+                <Card>
+                  <div className="shadow" style={{ width: "200px" }}>
+                    {p.image == null ? (
+                      <img
+                        src=""
+                        alt="img"
+                        className="card-img-top rounded"
+                      ></img>
+                    ) : (
+                      <NavLink to={`/Catalogo/${p.id}`}>
+                        <img
+                          src={p.image}
+                          alt="img"
+                          className="card-img-top rounded unzoom"
+                        ></img>
+                      </NavLink>
+                    )}
 
-    const {image, name, status, origin, episodes} = props.info
+                    {/* <Card.Body>
+                      <p className="text-center"> {p.name} </p>
+                      <Button
+                        onClick={() => context.addProductToCart(p)}
+                        variant="primary"
+                      >
+                        AÑADIR AL CARRITO
+                      </Button>
+                    </Card.Body> */}
+                  </div>
+                </Card>
+              );
+            })}
+          </React.Fragment>
+        )}
+      </ShopContext.Consumer>
+    
 
-  return (
-    <div className="shadow" style={{ width: "300px" }}>
-      <img src={image} className="card-img-top"></img>
-
-      <div className="card-body bg-black bg-opacity-25">
-        <h5 className="card-title text-center p-1"> {name} </h5>
-        <p className="card-text p-2">{status}</p>
-      </div>
-
-      <ul className="list-group list-group-flush ">
-        <li className="list-group-item text-start bg-black bg-opacity-50">
-          <p className="card-text text-white"> Origin: {origin.name} </p>
-          <p className="card-text text-white">Episodes: {episodes}</p>
-        </li>
-      </ul>
-    </div>
-  );
+    </>
+    
+  
 }
 
 export default Card

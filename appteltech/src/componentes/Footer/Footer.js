@@ -1,10 +1,13 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import Logo from "../Assets/LogoTeltech2.png";
 
 function Footer() {
   
+  const pathname = useLocation().pathname;
+  console.log(pathname);
 
-  return (
+  return pathname != "/Login" ? (
     <>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +65,10 @@ function Footer() {
         </footer>
       </div>
     </>
-  );
+  ) : (
+    <>
+    </>
+  )
 }
 
 export default Footer;
