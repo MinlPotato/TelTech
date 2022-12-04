@@ -61,7 +61,12 @@
 }
 
 .colorHeader {
-    background: linear-gradient(45deg,#440a4b,#1b0747);
+    background: linear-gradient(45deg,#7a0687,#2d0584);
+   
+}
+
+.colorFooter {
+    background: linear-gradient(45deg,#340339,#190447);
    
 }
 

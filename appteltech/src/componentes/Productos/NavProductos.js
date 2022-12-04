@@ -10,7 +10,7 @@ import "./Productos.css";
 function NavProductos() {
   return (
     <Navbar className="colortest" text="white" expand="lg">
-      <Container fluid>
+      <Container>
         <Navbar.Brand href="#">Categorias</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
