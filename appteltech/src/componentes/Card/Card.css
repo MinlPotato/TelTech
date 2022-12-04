@@ -9,7 +9,7 @@
 }
 
 .unzoom:hover, .zoom:focus {
-    transform: scale(.9);
+    transform: scale(.97);
 }
 
 .zoom {
@@ -18,5 +18,5 @@
 }
 
 .zoom:hover, .zoom:focus {
-    transform: scale(1.1);
+    transform: scale(1.04);
 }

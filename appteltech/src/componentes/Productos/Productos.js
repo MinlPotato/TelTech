@@ -11,7 +11,7 @@ const Productos = () => {
       <div className="mt-2 ">
         <NavProductos />
       </div>
-      <div className="container">
+      <div className="container card mt-3 mb-5">
         <div className="d-flex justify-content-center">
           <CarouselHome />
         </div>
@@ -19,14 +19,11 @@ const Productos = () => {
         <h1 className="text-center py-5">Productos</h1>
 
         <h2 className="">Telescopios</h2>
-        <div
-          style={{ overflow: "auto" }}
-          className="d-flex flex-start gap-5 flex-wrap p-4"
-        >
-          <Cards/>
+        <div className="d-flex flex-start gap-5 mb-3 overflow-auto flex-nowrap p-4">
+          <Cards />
         </div>
 
-        <h2 className="mt-5">Accesorios</h2>
+        {/* <h2 className="mt-5">Accesorios</h2>
         <div className="d-flex flex-nowrap gap-3 bg-dark scroll">
           {<Cards /> != null ? (
             <div>
@@ -37,7 +34,7 @@ const Productos = () => {
               <span className="visually-hidden">Loading...</span>
             </div>
           )}
-        </div>
+        </div> */}
       </div>
     </>
   );
