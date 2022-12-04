@@ -9,7 +9,7 @@ function CarritoButton() {
   return (
     <>
       <NavLink to="/Carrito">
-        <div className="d-flex justify-content-end mx-5">
+        <div className="d-flex mt-3 justify-content-end mx-5">
           <div className="carritoButton">
             <img
               src="https://img.icons8.com/sf-regular-filled/48/undefined/shopping-cart.png"

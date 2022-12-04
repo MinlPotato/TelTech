@@ -6,7 +6,10 @@ import { NavLink } from 'react-router-dom';
 function HeaderNormal() {
   return (
     <header>
-      <div className="px-3 py-2 bg-dark shadow-lg">
+      <div
+        className="px-3 py-2 bg-dark shadow-lg colorHeader"
+        
+      >
         <div className="container">
           <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
             <a
@@ -26,17 +29,14 @@ function HeaderNormal() {
               </li>
             </ul>
             <div className="text-end px-2">
-
-               <button type="button" className="btn btn-light text-dark me-2">
+              <button type="button" className="btn btn-light text-dark me-2">
                 Login
               </button>
               <a href="/Login">
                 <button type="button" className="btn btn-primary">
-                Sign-up
-              </button>
+                  Sign-up
+                </button>
               </a>
-             
-              
             </div>
           </div>
         </div>

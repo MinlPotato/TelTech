@@ -41,24 +41,24 @@ function ProductoCard(props) {
               <Card.Body className="w-100 justify-content-center align-items-center">
                 <h5 className="text-start"> Caracteristicas </h5>
                 <ul className="list-group list-group-horizontal mb-1">
-                  <li className="list-group-item w-100 text-muted bg-transparent border-primary">
-                    Tipo de telescopio:
+                  <li className="list-group-item w-100 text-start text-muted bg-transparent border-primary">
+                    Tipo de telescopio
                   </li>
                   <li className="list-group-item w-75 text-muted bg-transparent border-secondary">
                     {tipoDeTelescopio}
                   </li>
                 </ul>
                 <ul className="list-group list-group-horizontal mb-1">
-                  <li className="list-group-item w-100 text-muted bg-transparent border-primary">
-                    Fabricante:
+                  <li className="list-group-item w-100 text-start text-muted bg-transparent border-primary">
+                    Fabricante
                   </li>
                   <li className="list-group-item w-75 text-muted bg-transparent border-secondary">
                     {fabricante}
                   </li>
                 </ul>
                 <ul className="list-group list-group-horizontal mb-1">
-                  <li className="list-group-item  w-100 text-muted bg-transparent border-primary">
-                    pais de origen:
+                  <li className="list-group-item text-start w-100 text-muted bg-transparent border-primary">
+                    Pais de origen
                   </li>
                   <li className="list-group-item w-75 text-muted bg-transparent border-secondary">
                     {paisDeOrigen}

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 
 /* 
 .bubble::after {
@@ -12,6 +13,10 @@
     background-color: #0e1116;
 
 } */
+
+h1, h2, h3, h4 {
+  font-family: 'Major Mono Display', monospace;
+}
 
  section {
         position: relative;
