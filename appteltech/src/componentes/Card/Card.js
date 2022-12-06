@@ -3,12 +3,14 @@ import { NavLink } from "react-router-dom";
 import ShopContext from "../ContextT/ShopContext";
 import { Card } from "react-bootstrap";
 import "./Card.css";
+import Carousel from "react-bootstrap/Carousel";
+import Stack from "react-bootstrap/Stack";
 
 function Cards(props) {
   console.log(props.tipo);
 
-  let tipo = props.tipo
-
+  let tipo = props.tipo;
+  let id = props.id
 
   return tipo == undefined ? (
     <>
@@ -17,30 +19,29 @@ function Cards(props) {
           <React.Fragment>
             {context.products.map((p) => {
               return (
-                <div className="">
-                  <div className="shadow" style={{ width: "230px" }}>
-                    {p.imagen == null ? (
+                <div className="shadow" style={{ width: "230px" }}>
+                  {p.imagen == null ? (
+                    <img
+                      src=""
+                      alt="img"
+                      className="card-img-top rounded"
+                    ></img>
+                  ) : (
+                    <NavLink to={`/productos/${p.id}`}>
                       <img
-                        src=""
+                        src={p.imagen}
                         alt="img"
-                        className="card-img-top rounded"
+                        className="card-img-top rounded unzoom"
+                        style={{
+                          objectFit: "cover",
+                          width: "230px",
+                          height: "230px",
+                        }}
                       ></img>
-                    ) : (
-                      <NavLink to={`/productos/${p.id}`}>
-                        <img
-                          src={p.imagen}
-                          alt="img"
-                          className="card-img-top rounded unzoom"
-                          style={{
-                            objectFit: "cover",
-                            width: "230px",
-                            height: "230px",
-                          }}
-                        ></img>
-                      </NavLink>
-                    )}
+                    </NavLink>
+                  )}
 
-                    {/* <Card.Body>
+                  {/* <Card.Body>
                       <p className="text-center"> {p.name} </p>
                       <Button
                         onClick={() => context.addProductToCart(p)}
@@ -49,7 +50,6 @@ function Cards(props) {
                         AÑADIR AL CARRITO
                       </Button>
                     </Card.Body> */}
-                  </div>
                 </div>
               );
             })}
@@ -63,7 +63,7 @@ function Cards(props) {
         {(context) => (
           <React.Fragment>
             {context.products.map((p) => {
-              return p.tipoDeTelescopio == `${tipo}` ? (
+              return p.tipoDeTelescopio == `${tipo}` && p.id != `${id}` ? (
                 <div>
                   <div className="shadow" style={{ width: "230px" }}>
                     {p.imagen == null ? (
@@ -100,7 +100,7 @@ function Cards(props) {
                 </div>
               ) : (
                 <></>
-              )
+              );
             })}
           </React.Fragment>
         )}

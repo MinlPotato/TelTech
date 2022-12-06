@@ -23,7 +23,7 @@ function ProductoCard(props) {
       <div className="text-center container mx-5  py-4">
         <div className="row">
           <div className="col-sm-7 ">
-            <div className="align-items-center border-bottom">
+            <div className="align-items-center border-bottom border-dark">
               <img
                 className="img-fluid zoom mb-3 rounded"
                 alt="img"
@@ -32,7 +32,7 @@ function ProductoCard(props) {
               ></img>
             </div>
           </div>
-          <div className="col-sm-4">
+          <div className="col-4 mx-4">
             <Card className="align-items-start p-2">
               <h2 className="mb-2 "> {nombre} </h2>
               <p className="mb-5 text-muted">Stock Disponible</p>

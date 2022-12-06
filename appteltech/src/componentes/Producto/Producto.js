@@ -5,14 +5,19 @@ import { telescopios } from "../Assets/TelescopiosAPI";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Cards from "../Card/Card";
 
+
 function Producto() {
   const { id } = useParams();
 
   const [Producto, setProducto] = useState();
 
+  
+
   useEffect(() => {
     getProductById(id);
   }, [id]);
+
+  
 
   function getProductById(id) {
     const item = telescopios.find((x) => x.id === id);
@@ -20,7 +25,9 @@ function Producto() {
       setProducto(item);
     }
   }
-
+  
+  
+  console.log(Producto);
   return (
     <>
       {Producto != null ? (
@@ -43,7 +50,7 @@ function Producto() {
               style={{ overflow: "auto" }}
               className="d-flex flex-start gap-4 flex-nowrap p-4 "
             >
-              <Cards tipo={Producto.tipoDeTelescopio} />
+              <Cards tipo={Producto.tipoDeTelescopio} id={Producto.id} />
             </div>
           </div>
         </>

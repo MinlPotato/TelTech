@@ -15,119 +15,241 @@ function Informacion() {
   
   return (
     <>
-    <div className='d-flex'>
+      <div className="row">
+        <div style={{ fontSize: "1.5rem" }} className="col-3 px-5 card">
+          <nav
+            id="navbar-example3"
+            className="h-100 flex-column align-items-stretch pe-4 border-end border-dark"
+          >
+            <nav className="nav nav-pills flex-column">
+              <a className="nav-link text-white mt-4" href="#item-1">
+                Telescopios
+              </a>
+              <nav className="nav nav-pills flex-column text-white">
+                <a
+                  className="nav-link ms-3 my-1 text-white text-white"
+                  href="#item-1-1"
+                >
+                  Para que se usa?
+                </a>
+                <a className="nav-link ms-3 my-1 text-white" href="#item-1-2">
+                  Accesorios
+                </a>
+              </nav>
+              <a className="nav-link text-white" href="#item-2">
+                Planetas
+              </a>
+              <a className="nav-link text-white" href="#item-3">
+                Item 3
+              </a>
+              <nav className="nav nav-pills flex-column">
+                <a className="nav-link ms-3 my-1 text-white" href="#item-3-1">
+                  Item 3-1
+                </a>
+                <a className="nav-link ms-3 my-1 text-white" href="#item-3-2">
+                  Item 3-2
+                </a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
 
-      <Sidebar info={Infos}/>
-      <div className='Hero'></div>
-      <div className="container text-start">
-        <div className="gap-2 my-5 card p-5">
-          <div ref={info1} className="text-white info1">
-            {" "}
-            Si has decidido adquirir un telescopio estas en el lugar adecuado.
-            Aquí te explicaremos los distintos tipos de telescopios que existen.
-            Qué telescopios son mejores para iniciarse en esta afición y que
-            tipos de monturas son las más adecuadas para que puedas elegir
-            que telescopio comprar con criterio.{" "}
-
-          </div>
-          <br></br>
-          <div ref={info2} className=" text-white info2">
-            {" "}
-            Qué es Lorem Ipsum? Lorem Ipsum es simplemente el texto de relleno
-            de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto
-            de relleno estándar de las industrias desde el año 1500, cuando un
-            impresor (N. del T. persona que se dedica a la imprenta) desconocido
-            usó una galería de textos y los mezcló de tal manera que logró hacer
-            un libro de textos especimen. No sólo sobrevivió 500 años, sino que
-            tambien ingresó como texto de relleno en documentos electrónicos,
-            quedando esencialmente igual al original. Fue popularizado en los
-            60s con la creación de las hojas "Letraset", las cuales contenian
-            pasajes de Lorem Ipsum, y más recientemente con software de
-            autoedición, como por ejemplo Aldus PageMaker, el cual incluye
-            versiones de Lorem Ipsum. ¿Por qué lo usamos? Es un hecho
-            establecido hace demasiado tiempo que un lector se distraerá con el
-            contenido del texto de un sitio mientras que mira su diseño. El
-            punto de usar Lorem Ipsum es que tiene una distribución más o menos
-            normal de las letras, al contrario de usar textos como por ejemplo
-            "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un
-            español que se puede leer. Muchos paquetes de autoedición y editores
-            de páginas web usan el Lorem Ipsum como su texto por defecto, y al
-            hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos
-            sitios web que usan este texto si se encuentran en estado de
-            desarrollo. Muchas versiones han evolucionado a través de los años,
-            algunas veces por accidente, otras veces a propósito (por ejemplo
-            insertándole humor y cosas por el estilo). ¿De dónde viene? Al
-            contrario del pensamiento popular, el texto de Lorem Ipsum no es
-            simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica
-            de la literatura del Latin, que data del año 45 antes de Cristo,
-            haciendo que este adquiera mas de 2000 años de antiguedad. Richard
-            McClintock, un profesor de Latin de la Universidad de Hampden-Sydney
-            en Virginia, encontró una de las palabras más oscuras de la lengua
-            del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir
-            leyendo distintos textos del latín, descubrió la fuente indudable.
-            Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus
-            Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero,
-            escrito en el año 45 antes de Cristo. Este libro es un tratado de
-            teoría de éticas, muy popular durante el Renacimiento. La primera
-            linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una
-            linea en la sección 1.10.32 El trozo de texto estándar de Lorem
-            Ipsum usado desde el año 1500 es reproducido debajo para aquellos
-            interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum
-            et Malorum" por Cicero son también reproducidas en su forma original
-            exacta, acompañadas por versiones en Inglés de la traducción
-            realizada en 1914 por H. Rackham.{" "}
-          </div>
-          <br/>
-          <div ref={info3} className=" text-white ">
-            {" "}
-            Qué es Lorem Ipsum? Lorem Ipsum es simplemente el texto de relleno
-            de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto
-            de relleno estándar de las industrias desde el año 1500, cuando un
-            impresor (N. del T. persona que se dedica a la imprenta) desconocido
-            usó una galería de textos y los mezcló de tal manera que logró hacer
-            un libro de textos especimen. No sólo sobrevivió 500 años, sino que
-            tambien ingresó como texto de relleno en documentos electrónicos,
-            quedando esencialmente igual al original. Fue popularizado en los
-            60s con la creación de las hojas "Letraset", las cuales contenian
-            pasajes de Lorem Ipsum, y más recientemente con software de
-            autoedición, como por ejemplo Aldus PageMaker, el cual incluye
-            versiones de Lorem Ipsum. ¿Por qué lo usamos? Es un hecho
-            establecido hace demasiado tiempo que un lector se distraerá con el
-            contenido del texto de un sitio mientras que mira su diseño. El
-            punto de usar Lorem Ipsum es que tiene una distribución más o menos
-            normal de las letras, al contrario de usar textos como por ejemplo
-            "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un
-            español que se puede leer. Muchos paquetes de autoedición y editores
-            de páginas web usan el Lorem Ipsum como su texto por defecto, y al
-            hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos
-            sitios web que usan este texto si se encuentran en estado de
-            desarrollo. Muchas versiones han evolucionado a través de los años,
-            algunas veces por accidente, otras veces a propósito (por ejemplo
-            insertándole humor y cosas por el estilo). ¿De dónde viene? Al
-            contrario del pensamiento popular, el texto de Lorem Ipsum no es
-            simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica
-            de la literatura del Latin, que data del año 45 antes de Cristo,
-            haciendo que este adquiera mas de 2000 años de antiguedad. Richard
-            McClintock, un profesor de Latin de la Universidad de Hampden-Sydney
-            en Virginia, encontró una de las palabras más oscuras de la lengua
-            del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir
-            leyendo distintos textos del latín, descubrió la fuente indudable.
-            Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus
-            Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero,
-            escrito en el año 45 antes de Cristo. Este libro es un tratado de
-            teoría de éticas, muy popular durante el Renacimiento. La primera
-            linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una
-            linea en la sección 1.10.32 El trozo de texto estándar de Lorem
-            Ipsum usado desde el año 1500 es reproducido debajo para aquellos
-            interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum
-            et Malorum" por Cicero son también reproducidas en su forma original
-            exacta, acompañadas por versiones en Inglés de la traducción
-            realizada en 1914 por H. Rackham.
+        <div style={{ fontSize: "20px" }} className="col-8 mx-4 card">
+          <div
+            data-bs-spy="scroll"
+            data-bs-target="#navbar-example3"
+            data-bs-smooth-scroll="true"
+            className="scrollspy-example-2"
+            tabindex="0"
+          >
+            <div id="item-1">
+              <h4 className="mt-5">Telescopios</h4>
+              <p className="px-5">
+                Si has decidido adquirir un telescopio estas en el lugar
+                adecuado. Aquí te explicaremos los distintos tipos de
+                telescopios que existen. Qué telescopios son mejores para
+                iniciarse en esta afición y que tipos de monturas son las más
+                adecuadas para que puedas elegir que telescopio comprar con
+                criterio.{" "}
+              </p>
+            </div>
+            <div id="item-1-1">
+              <h5 className="pt-3 px-3">Para que se usa?</h5>
+              <p className="px-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Tellus integer feugiat scelerisque varius. Sed adipiscing diam
+                donec adipiscing. Donec et odio pellentesque diam. Praesent
+                elementum facilisis leo vel fringilla. Scelerisque fermentum dui
+                faucibus in ornare quam. Sit amet purus gravida quis blandit
+                turpis cursus in. Tellus at urna condimentum mattis pellentesque
+                id nibh tortor id. Neque volutpat ac tincidunt vitae semper.
+                Enim eu turpis egestas pretium aenean pharetra magna. Nulla
+                malesuada pellentesque elit eget gravida cum sociis natoque.
+                Diam quis enim lobortis scelerisque fermentum dui faucibus. Odio
+                eu feugiat pretium nibh ipsum consequat. Varius sit amet mattis
+                vulputate enim nulla aliquet. Sit amet purus gravida quis
+                blandit turpis cursus in hac. Vitae purus faucibus ornare
+                suspendisse. Faucibus in ornare quam viverra orci sagittis eu.
+                Viverra justo nec ultrices dui sapien eget mi proin. Aliquam
+                malesuada bibendum arcu vitae elementum curabitur vitae nunc.
+                Cursus vitae congue mauris rhoncus aenean vel. Adipiscing vitae
+                proin sagittis nisl rhoncus mattis rhoncus urna. Nunc consequat
+                interdum varius sit amet mattis vulputate. Nisl rhoncus mattis
+                rhoncus urna. Suspendisse sed nisi lacus sed viverra tellus in
+                hac. Ut diam quam nulla porttitor massa id. A lacus vestibulum
+                sed arcu non odio euismod lacinia. Consectetur lorem donec massa
+                sapien. Nulla facilisi etiam dignissim diam.
+              </p>
+            </div>
+            <div id="item-1-2">
+              <h5 className="pt-3 px-3">Accesorios</h5>
+              <p className="px-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Tellus integer feugiat scelerisque varius. Sed adipiscing diam
+                donec adipiscing. Donec et odio pellentesque diam. Praesent
+                elementum facilisis leo vel fringilla. Scelerisque fermentum dui
+                faucibus in ornare quam. Sit amet purus gravida quis blandit
+                turpis cursus in. Tellus at urna condimentum mattis pellentesque
+                id nibh tortor id. Neque volutpat ac tincidunt vitae semper.
+                Enim eu turpis egestas pretium aenean pharetra magna. Nulla
+                malesuada pellentesque elit eget gravida cum sociis natoque.
+                Diam quis enim lobortis scelerisque fermentum dui faucibus. Odio
+                eu feugiat pretium nibh ipsum consequat. Varius sit amet mattis
+                vulputate enim nulla aliquet. Sit amet purus gravida quis
+                blandit turpis cursus in hac. Vitae purus faucibus ornare
+                suspendisse. Faucibus in ornare quam viverra orci sagittis eu.
+                Viverra justo nec ultrices dui sapien eget mi proin. Aliquam
+                malesuada bibendum arcu vitae elementum curabitur vitae nunc.
+                Cursus vitae congue mauris rhoncus aenean vel. Adipiscing vitae
+                proin sagittis nisl rhoncus mattis rhoncus urna. Nunc consequat
+                interdum varius sit amet mattis vulputate. Nisl rhoncus mattis
+                rhoncus urna. Suspendisse sed nisi lacus sed viverra tellus in
+                hac. Ut diam quam nulla porttitor massa id. A lacus vestibulum
+                sed arcu non odio euismod lacinia. Consectetur lorem donec massa
+                sapien. Nulla facilisi etiam dignissim diam.
+              </p>
+            </div>
+            <div id="item-2">
+              <h4 className="pt-5">Planetas</h4>
+              <p className="px-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Tellus integer feugiat scelerisque varius. Sed adipiscing diam
+                donec adipiscing. Donec et odio pellentesque diam. Praesent
+                elementum facilisis leo vel fringilla. Scelerisque fermentum dui
+                faucibus in ornare quam. Sit amet purus gravida quis blandit
+                turpis cursus in. Tellus at urna condimentum mattis pellentesque
+                id nibh tortor id. Neque volutpat ac tincidunt vitae semper.
+                Enim eu turpis egestas pretium aenean pharetra magna. Nulla
+                malesuada pellentesque elit eget gravida cum sociis natoque.
+                Diam quis enim lobortis scelerisque fermentum dui faucibus. Odio
+                eu feugiat pretium nibh ipsum consequat. Varius sit amet mattis
+                vulputate enim nulla aliquet. Sit amet purus gravida quis
+                blandit turpis cursus in hac. Vitae purus faucibus ornare
+                suspendisse. Faucibus in ornare quam viverra orci sagittis eu.
+                Viverra justo nec ultrices dui sapien eget mi proin. Aliquam
+                malesuada bibendum arcu vitae elementum curabitur vitae nunc.
+                Cursus vitae congue mauris rhoncus aenean vel. Adipiscing vitae
+                proin sagittis nisl rhoncus mattis rhoncus urna. Nunc consequat
+                interdum varius sit amet mattis vulputate. Nisl rhoncus mattis
+                rhoncus urna. Suspendisse sed nisi lacus sed viverra tellus in
+                hac. Ut diam quam nulla porttitor massa id. A lacus vestibulum
+                sed arcu non odio euismod lacinia. Consectetur lorem donec massa
+                sapien. Nulla facilisi etiam dignissim diam.
+              </p>
+            </div>
+            <div id="item-3">
+              <h4>Item 3</h4>
+              <p className="px-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Tellus integer feugiat scelerisque varius. Sed adipiscing diam
+                donec adipiscing. Donec et odio pellentesque diam. Praesent
+                elementum facilisis leo vel fringilla. Scelerisque fermentum dui
+                faucibus in ornare quam. Sit amet purus gravida quis blandit
+                turpis cursus in. Tellus at urna condimentum mattis pellentesque
+                id nibh tortor id. Neque volutpat ac tincidunt vitae semper.
+                Enim eu turpis egestas pretium aenean pharetra magna. Nulla
+                malesuada pellentesque elit eget gravida cum sociis natoque.
+                Diam quis enim lobortis scelerisque fermentum dui faucibus. Odio
+                eu feugiat pretium nibh ipsum consequat. Varius sit amet mattis
+                vulputate enim nulla aliquet. Sit amet purus gravida quis
+                blandit turpis cursus in hac. Vitae purus faucibus ornare
+                suspendisse. Faucibus in ornare quam viverra orci sagittis eu.
+                Viverra justo nec ultrices dui sapien eget mi proin. Aliquam
+                malesuada bibendum arcu vitae elementum curabitur vitae nunc.
+                Cursus vitae congue mauris rhoncus aenean vel. Adipiscing vitae
+                proin sagittis nisl rhoncus mattis rhoncus urna. Nunc consequat
+                interdum varius sit amet mattis vulputate. Nisl rhoncus mattis
+                rhoncus urna. Suspendisse sed nisi lacus sed viverra tellus in
+                hac. Ut diam quam nulla porttitor massa id. A lacus vestibulum
+                sed arcu non odio euismod lacinia. Consectetur lorem donec massa
+                sapien. Nulla facilisi etiam dignissim diam.
+              </p>
+            </div>
+            <div id="item-3-1">
+              <h5 className="px-5">Item 3-1</h5>
+              <p className="px-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Tellus integer feugiat scelerisque varius. Sed adipiscing diam
+                donec adipiscing. Donec et odio pellentesque diam. Praesent
+                elementum facilisis leo vel fringilla. Scelerisque fermentum dui
+                faucibus in ornare quam. Sit amet purus gravida quis blandit
+                turpis cursus in. Tellus at urna condimentum mattis pellentesque
+                id nibh tortor id. Neque volutpat ac tincidunt vitae semper.
+                Enim eu turpis egestas pretium aenean pharetra magna. Nulla
+                malesuada pellentesque elit eget gravida cum sociis natoque.
+                Diam quis enim lobortis scelerisque fermentum dui faucibus. Odio
+                eu feugiat pretium nibh ipsum consequat. Varius sit amet mattis
+                vulputate enim nulla aliquet. Sit amet purus gravida quis
+                blandit turpis cursus in hac. Vitae purus faucibus ornare
+                suspendisse. Faucibus in ornare quam viverra orci sagittis eu.
+                Viverra justo nec ultrices dui sapien eget mi proin. Aliquam
+                malesuada bibendum arcu vitae elementum curabitur vitae nunc.
+                Cursus vitae congue mauris rhoncus aenean vel. Adipiscing vitae
+                proin sagittis nisl rhoncus mattis rhoncus urna. Nunc consequat
+                interdum varius sit amet mattis vulputate. Nisl rhoncus mattis
+                rhoncus urna. Suspendisse sed nisi lacus sed viverra tellus in
+                hac. Ut diam quam nulla porttitor massa id. A lacus vestibulum
+                sed arcu non odio euismod lacinia. Consectetur lorem donec massa
+                sapien. Nulla facilisi etiam dignissim diam.
+              </p>
+            </div>
+            <div id="item-3-2">
+              <h5>Item 3-2</h5>
+              <p className="px-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Tellus integer feugiat scelerisque varius. Sed adipiscing diam
+                donec adipiscing. Donec et odio pellentesque diam. Praesent
+                elementum facilisis leo vel fringilla. Scelerisque fermentum dui
+                faucibus in ornare quam. Sit amet purus gravida quis blandit
+                turpis cursus in. Tellus at urna condimentum mattis pellentesque
+                id nibh tortor id. Neque volutpat ac tincidunt vitae semper.
+                Enim eu turpis egestas pretium aenean pharetra magna. Nulla
+                malesuada pellentesque elit eget gravida cum sociis natoque.
+                Diam quis enim lobortis scelerisque fermentum dui faucibus. Odio
+                eu feugiat pretium nibh ipsum consequat. Varius sit amet mattis
+                vulputate enim nulla aliquet. Sit amet purus gravida quis
+                blandit turpis cursus in hac. Vitae purus faucibus ornare
+                suspendisse. Faucibus in ornare quam viverra orci sagittis eu.
+                Viverra justo nec ultrices dui sapien eget mi proin. Aliquam
+                malesuada bibendum arcu vitae elementum curabitur vitae nunc.
+                Cursus vitae congue mauris rhoncus aenean vel. Adipiscing vitae
+                proin sagittis nisl rhoncus mattis rhoncus urna. Nunc consequat
+                interdum varius sit amet mattis vulputate. Nisl rhoncus mattis
+                rhoncus urna. Suspendisse sed nisi lacus sed viverra tellus in
+                hac. Ut diam quam nulla porttitor massa id. A lacus vestibulum
+                sed arcu non odio euismod lacinia. Consectetur lorem donec massa
+                sapien. Nulla facilisi etiam dignissim diam.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      
-  </div>
     </>
   );
 }

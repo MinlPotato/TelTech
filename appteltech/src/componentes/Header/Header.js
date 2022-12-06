@@ -26,25 +26,23 @@ useEffect(() => {
   
   document.addEventListener("scroll", SetFixed);
 
-  return  pathname == "/Login" ? (
+  return pathname == "/Login" || "/informacion" ? (
     <>
+      <HeaderNormal />
     </>
-
-  ) : (
-    fix == false ? (
+  ) : fix == false ? (
     //home, contacto, catalogo
     <>
       <HeaderNormal />
-      <CarritoButton/>
+      <CarritoButton />
     </>
   ) : (
     <>
       <HeaderNormal />
       <HeaderFixed />
-      <CarritoButton/>
+      <CarritoButton />
     </>
-  )
-  )
+  );
   
   
 }

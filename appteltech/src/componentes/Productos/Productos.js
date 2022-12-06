@@ -4,6 +4,7 @@ import "./Productos.css";
 import CarouselHome from "../Carousel/Carousel";
 import NavProductos from "./NavProductos";
 import { telescopios } from "../Assets/TelescopiosAPI";
+import Carousel from "react-bootstrap/Carousel";
 
 const Productos = () => {
   return (
@@ -20,6 +21,7 @@ const Productos = () => {
 
         <h2 className="">Telescopios</h2>
         <div className="d-flex flex-start gap-5 mb-3 overflow-auto flex-nowrap p-4">
+          
           <Cards />
         </div>
 

@@ -10,7 +10,7 @@ function Home() {
   return (
     <>
       <section className="dark fontSpace">
-        <h1 style={{ fontSize: "100px" }}>Bienvenidos a TelTech</h1>
+        <h1 className="titulo" style={{ fontSize: "100px" }}>Bienvenidos a TelTech</h1>
 
         <img
           src={planeta}
