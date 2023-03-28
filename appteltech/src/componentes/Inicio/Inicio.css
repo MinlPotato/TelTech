@@ -15,8 +15,12 @@
 
 } */
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, a {
   font-family: 'Space Mono', monospace;
+}
+
+.fontSpace {
+   font-family: 'Space Mono', monospace;
 }
 
 .titulo {
@@ -62,39 +66,43 @@ h1, h2, h3, h4 {
       }
 
       .sectionBotones {
-        background-color: #0f0f10;
-         padding-bottom: 100px;
+        background: #151528;
+          padding: 50px;    
+          
+         height: 800px;
       }
 
       .buttonTelescopios {
         height: 500px;
         background: linear-gradient(45deg,#00000085,#00ffaa88) , url(../Assets/telescopioBoton.jpg);
         background-position: center ;
-        background-size:cover;
-         transition: all .3s ease-in-out; 
+        background-size: cover;
+         transition: transform .5s ease; 
       }
 
       .buttonAccesorios {
         height: 500px;
         background: linear-gradient(45deg,#00000085,#0015ff88) , url(../Assets/accesoriosBoton.jpeg);
         background-position: center ;
-        background-size:cover;
-         transition: all .3s ease-in-out; 
+        background-size: cover;
+         transition: transform .5s ease; 
       }
 
       .buttonInformacion {
         height: 500px;
         background: linear-gradient(45deg,#00000085,#e600ff88) , url(../Assets/informacionBoton.jpg);
         background-position: center ;
-        background-size:cover;
-         transition:  all .3s ease-in-out; 
+        background-size: cover;
+        transition:  transform .5s ease; 
       }
 
       .buttonInformacion:hover , .buttonAccesorios:hover,  .buttonTelescopios:hover {
           transform: scale(1.05);
       }
 
-      
+      .image-zoom {
+        overflow: hidden
+      }
 
       /* Curved bg with plain CSS */
 
@@ -184,3 +192,27 @@ h1, h2, h3, h4 {
 
       /* Blobs SVG background image via https://haikei.app/ */
 
+.animate__animated.animate__fadeInUp {
+  --animate-duration: 1s;
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 3s;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../Assets/photo-1534796636912-3b95b3ab5986.jfif");
+
+  /* Set a specific height */
+  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: 0px 0px;
+  background-repeat: repeat;
+
+}
+
+.parallaxText {
+  position: fixed;
+}

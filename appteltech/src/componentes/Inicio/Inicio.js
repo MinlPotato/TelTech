@@ -1,21 +1,29 @@
 import React from "react";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 import "./Inicio.css";
 import planeta from "../Assets/planeta-tierra.png"
 import Logo from "../Assets/LogoTeltech2.png";
 import { NavLink } from "react-router-dom";
 
 function Home() {
+
+
+  // document.addEventListener("scroll", SetFixed);
+
   return (
     <>
-      <section className="dark fontSpace">
-        <h1 className="titulo" style={{ fontSize: "100px" }}>Bienvenidos a TelTech</h1>
+      <section className="dark fontSpace parallax">
+        <h1
+          className="titulo animate__animated animate__fadeIn parallaxText"
+          style={{ fontSize: "100px" }}
+        >
+          Bienvenidos a TelTech
+        </h1>
 
         <img
           src={planeta}
-          className="w-100"
-          style={{ maxWidth: "2600px" }}
+          className="w-100 animate__animated animate__fadeInUp"
+          style={{ maxWidth: "2600px", marginTop:"150px" }}
+          alt="earth"
         ></img>
       </section>
 
@@ -25,7 +33,7 @@ function Home() {
             <div class="col mb-4">
               <h2>Que es TelTech?</h2>
             </div>
-            <div class="col "></div>
+            <div class="col"></div>
           </div>
           <div class="row mb-5">
             <div class="col text-start p-4 card">
@@ -66,27 +74,38 @@ function Home() {
                 src={Logo}
                 className="border-transparent card p-4"
                 style={{ width: "600px" }}
+                alt="logo"
               ></img>
             </div>
           </div>
         </div>
       </section>
-      <section className="sectionBotones mb-5">
-        <div className="w-100 d-flex gap-2 px-5">
-          <NavLink to="/productos" className="w-50 text-decoration-none text-white">
+      <section className="sectionBotones mb-5 parallax">
+        <h2 className="mb-5" style={{fontSize:"50px"}}>Empieza a explorar!</h2>
+        <div className="w-100 d-flex gap-2 px-5 ">
+          <NavLink
+            to="/productos"
+            className="w-50 image-zoom text-white"
+          >
             <div className="buttonTelescopios">
               <h1 className="text-center ">Telescopios</h1>
             </div>
           </NavLink>
-          <NavLink to="/productos" className="w-50 text-decoration-none text-white">
+          <NavLink
+            to="/productos"
+            className="w-50 text-decoration-none image-zoom text-white"
+          >
             <div className=" buttonAccesorios">
-            <h1 className="text-center">Accesorios</h1>
-          </div>
+              <h1 className="text-center">Accesorios</h1>
+            </div>
           </NavLink>
-          <NavLink to="/informacion" className="w-50 text-decoration-none text-white">
-            <div className=" buttonInformacion">
-            <h1 className="text-center">Informacion</h1>
-          </div>
+          <NavLink
+            to="/informacion"
+            className="w-50 text-decoration-none image-zoom text-white"
+          >
+            <div className=" buttonInformacion ">
+              <h1 className="text-center">Informacion</h1>
+            </div>
           </NavLink>
         </div>
       </section>

@@ -26,7 +26,7 @@ useEffect(() => {
   
   document.addEventListener("scroll", SetFixed);
 
-  return pathname == "/Login" || "/informacion" ? (
+  return (pathname == "/Login") || (pathname =="/informacion") ? (
     <>
       <HeaderNormal />
     </>

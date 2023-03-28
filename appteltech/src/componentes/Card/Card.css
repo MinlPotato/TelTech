@@ -1,22 +1,23 @@
 .buttonCenter {
   width: 100%;
-  
 }
 
 .unzoom {
-   transition: ease-in-out .2s ;
-   
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  
 }
 
-.unzoom:hover, .zoom:focus {
-    transform: scale(.97);
+.unzoom:hover,
+.zoom:focus {
+  transform: scale(0.97);
 }
 
 .zoom {
-   transition: ease-in-out .2s .15s ;
-   
+  transition: transform 0.5s ease;
 }
 
-.zoom:hover, .zoom:focus {
-    transform: scale(1.04);
+.zoom:hover,
+.zoom:focus {
+  transform: scale(1.04);
 }

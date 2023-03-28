@@ -36,7 +36,7 @@
     height: 50px;
     background: linear-gradient(45deg,#FB7140,#FB9951);
     border-radius: 100%;
-    box-shadow: 0px 0px 10px 3px rgba(248, 161, 0, 0.182);
+    box-shadow: 0px 0px 10px 10px rgba(248, 161, 0, 0.182);
     position: fixed;
     z-index: 1;
     transition: ease-in-out .2s  ;
@@ -61,7 +61,7 @@
 }
 
 .colorHeader {
-    background: linear-gradient(45deg,#70007d76,#28007d76);
+    background: linear-gradient(45deg,#c000d676,#4502d776);
     
 }
 

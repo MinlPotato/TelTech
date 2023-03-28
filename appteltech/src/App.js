@@ -11,6 +11,7 @@ import ShoppingCart from "./componentes/ShoppingCart/ShoppingCart";
 import Producto from "./componentes/Producto/Producto";
 import GlobalState from "./componentes/ContextT/GlobalState";
 import CheckOutPage from "./componentes/CheckOut/CheckOutPage";
+import "animate.css"
 
 function App() {
   return (

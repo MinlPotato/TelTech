@@ -6,7 +6,7 @@ import img3 from "../Assets/publicidad3.png";
 
 function CarouselHome() {
   return (
-    <Carousel className="d-flex justify-content-center mt-5 w-100 shadow">
+    <Carousel className="d-flex justify-content-center mt-5 w-75 shadow">
       <Carousel.Item>
         <img className="d-block w-100" src= {img} alt="First slide" />
         <Carousel.Caption>
