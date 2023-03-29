@@ -5,16 +5,23 @@ import CarouselHome from "../Carousel/Carousel";
 import NavProductos from "./NavProductos";
 import { telescopios } from "../Assets/TelescopiosAPI";
 import Carousel from "react-bootstrap/Carousel";
+import { useEffect } from "react";
+
 
 const Productos = () => {
+
+useEffect(() => {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+}, []);
+
   return (
     <>
-    
       {/* <div className="mt-2 ">
         <NavProductos />
       </div> */}
+      <div className="container card mt-3 mb-5" >
+        
 
-      <div className="container card mt-0 mb-5">
         <div className="d-flex justify-content-center">
           <CarouselHome />
         </div>
@@ -33,7 +40,7 @@ const Productos = () => {
           style={{ gap: "30px" }}
           className="d-flex flex-start overflow-auto flex-nowrap p-4"
         >
-          <Cards/>
+          <Cards />
         </div>
       </div>
     </>

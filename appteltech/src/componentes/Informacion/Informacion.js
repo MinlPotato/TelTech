@@ -1,11 +1,20 @@
-import { React, useRef } from "react";
+import { React, useRef, useEffect } from "react";
 import "./Informacion.css";
 
+
 function Informacion() {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <>
-      <div className="row">
-        <div style={{ fontSize: "1.5rem" }} className="col-3 pl-5 ps-5 me-5 card">
+      <div className="row me-5">
+        <div
+          style={{ fontSize: "1.5rem" }}
+          className="col-3 pl-5 ps-5 me-5 card"
+        >
           <div className="position-fixed">
             <nav
               id="navbar-example3"
@@ -20,18 +29,32 @@ function Informacion() {
                     className="nav-link ms-5 mt-1 fs-5 text-white text-white "
                     Href="#item-1-1"
                   >
-                   1. Para que se usa?
+                    1. Para que se usa?
                   </a>
                   <a
                     className="nav-link ms-5 my-1 fs-5 text-white "
                     href="#item-1-2"
                   >
-                   2. Accesorios
+                    2. Accesorios
                   </a>
                 </nav>
-                <a className="nav-link text-white  mb-3" Href="#item-2">
-                  Planetas
+                <a className="nav-link text-white" Href="#item-2">
+                  Como ver:
                 </a>
+                <nav className="nav nav-pills flex-column">
+                  <a
+                    className="nav-link ms-5 mt-1 fs-5  text-white"
+                    href="#item-2-1"
+                  >
+                    1. Planetas
+                  </a>
+                  <a
+                    className="nav-link ms-5 mt-1 fs-5 text-white"
+                    href="#item-2-2"
+                  >
+                    2. Cometas
+                  </a>
+                </nav>
                 <a className="nav-link text-white " href="#item-3">
                   Item 3
                 </a>
@@ -40,13 +63,13 @@ function Informacion() {
                     className="nav-link ms-5 mt-1 fs-5  text-white"
                     href="#item-3-1"
                   >
-                   1. Item 3-1
+                    1. Item 3-1
                   </a>
                   <a
                     className="nav-link ms-5 mt-1 fs-5 text-white"
                     href="#item-3-2"
                   >
-                   2. Item 3-2
+                    2. Item 3-2
                   </a>
                 </nav>
               </nav>
@@ -213,74 +236,137 @@ function Informacion() {
             </div>
 
             <div id="item-2">
-              <h4 className="pt-5 pb-3 fs-1">Planetas</h4>
+              <h4 className="pt-5 pb-3 fs-1">Como ver:</h4>
+              <div id="item-2-1">
+                <h5 className="pt-5 px-3 pb-3 fs-2">Planetas</h5>
+
+                <p className="px-5">
+                  Cada planeta del sistema solar se puede observar con un
+                  telescopio, pero se necesitan diferentes técnicas y ajustes
+                  para lograr la mejor imagen. A continuación, se presenta una
+                  breve explicación de cómo ver cada planeta del sistema solar
+                  con un telescopio:
+                </p>
+                <ol className="px-5">
+                  <div className="px-5">
+                    <li>
+                      <strong>Mercurio:</strong> Mercurio es un planeta difícil
+                      de observar debido a su cercanía al sol. Para observarlo,
+                      es necesario esperar a que esté lo más alejado posible del
+                      sol y observarlo justo antes del amanecer o justo después
+                      del atardecer. El uso de un filtro solar es necesario para
+                      evitar dañar los ojos y el telescopio.
+                    </li>
+                    <li>
+                      <strong>Venus:</strong> Venus es uno de los planetas más
+                      brillantes y fáciles de observar. Se puede ver a simple
+                      vista y con un telescopio se pueden apreciar sus fases, al
+                      igual que la luna. Se recomienda observarlo justo antes
+                      del amanecer o justo después del atardecer.
+                    </li>
+                    <li>
+                      <strong>Marte:</strong> Marte es un planeta rocoso y se
+                      puede ver mejor durante su oposición (cuando se encuentra
+                      más cerca de la Tierra). En este momento, se pueden
+                      observar los detalles de su superficie, como los casquetes
+                      polares y las regiones más oscuras. Se recomienda utilizar
+                      un filtro de color rojo para mejorar la visibilidad.
+                    </li>
+                    <li>
+                      <strong>Júpiter:</strong> Júpiter es el planeta más grande
+                      del sistema solar y se puede ver fácilmente con un
+                      telescopio. Se pueden observar las bandas de nubes, la
+                      Gran Mancha Roja y sus cuatro lunas más grandes (Io,
+                      Europa, Ganímedes y Calisto).
+                    </li>
+                    <li>
+                      <strong>Saturno:</strong> Saturno es famoso por sus
+                      anillos y se pueden observar con un telescopio. Se
+                      recomienda utilizar un ocular de mayor magnificación para
+                      ver los detalles en los anillos y la atmósfera del
+                      planeta.
+                    </li>
+                    <li>
+                      <strong>Urano:</strong> Urano es un planeta que se puede
+                      observar con un telescopio, pero es difícil de detectar a
+                      simple vista. Se recomienda utilizar un ocular de mayor
+                      magnificación y buscarlo en una zona del cielo sin mucha
+                      contaminación lumínica.
+                    </li>
+                    <li>
+                      <strong>Neptuno:</strong> Neptuno es un planeta que solo
+                      se puede ver con un telescopio potente, ya que es muy
+                      débil y pequeño. Se recomienda utilizar un ocular de alta
+                      magnificación y buscarlo en una zona del cielo sin mucha
+                      contaminación lumínica.
+                    </li>
+                  </div>
+                </ol>
+                <p className="px-5">
+                  En resumen, para ver cada planeta del sistema solar con un
+                  telescopio se necesitan diferentes técnicas y ajustes. Se
+                  recomienda esperar el momento adecuado para observarlos y
+                  utilizar accesorios como filtros de color para mejorar la
+                  visibilidad.
+                </p>
+              </div>
+            </div>
+
+            <div id="item-2-2">
+              <h5 className="pt-5 px-3 pb-3 fs-2">Cometas</h5>
               <p className="px-5">
-                Cada planeta del sistema solar se puede observar con un
-                telescopio, pero se necesitan diferentes técnicas y ajustes para
-                lograr la mejor imagen. A continuación, se presenta una breve
-                explicación de cómo ver cada planeta del sistema solar con un
-                telescopio:
+                Ver cometas con un telescopio puede ser una experiencia
+                emocionante y fascinante para cualquier astrónomo aficionado o
+                profesional. Para poder observar un cometa con un telescopio, se
+                deben seguir los siguientes pasos:
               </p>
               <ol className="px-5">
                 <div className="px-5">
                   <li>
-                    <strong>Mercurio:</strong> Mercurio es un planeta difícil de
-                    observar debido a su cercanía al sol. Para observarlo, es
-                    necesario esperar a que esté lo más alejado posible del sol
-                    y observarlo justo antes del amanecer o justo después del
-                    atardecer. El uso de un filtro solar es necesario para
-                    evitar dañar los ojos y el telescopio.
+                    Conocer la ubicación del cometa: Lo primero que debes hacer
+                    es conocer la ubicación del cometa en el cielo nocturno.
+                    Esto lo puedes hacer consultando una guía astronómica o
+                    utilizando alguna aplicación en línea que te permita saber
+                    en qué posición se encuentra el cometa en el cielo.
                   </li>
                   <li>
-                    <strong>Venus:</strong> Venus es uno de los planetas más
-                    brillantes y fáciles de observar. Se puede ver a simple
-                    vista y con un telescopio se pueden apreciar sus fases, al
-                    igual que la luna. Se recomienda observarlo justo antes del
-                    amanecer o justo después del atardecer.
+                    Configurar el telescopio: Una vez que tengas la ubicación
+                    del cometa, debes configurar tu telescopio de acuerdo a las
+                    especificaciones de la guía del usuario. Es importante que
+                    el telescopio esté correctamente enfocado y que esté
+                    colocado en una posición estable.
                   </li>
                   <li>
-                    <strong>Marte:</strong> Marte es un planeta rocoso y se
-                    puede ver mejor durante su oposición (cuando se encuentra
-                    más cerca de la Tierra). En este momento, se pueden observar
-                    los detalles de su superficie, como los casquetes polares y
-                    las regiones más oscuras. Se recomienda utilizar un filtro
-                    de color rojo para mejorar la visibilidad.
+                    Utilizar una lente de baja magnificación: Para observar un
+                    cometa, es recomendable utilizar una lente de baja
+                    magnificación. Esto te permitirá ver una amplia área del
+                    cielo, lo que te facilitará la tarea de encontrar el cometa.
                   </li>
                   <li>
-                    <strong>Júpiter:</strong> Júpiter es el planeta más grande
-                    del sistema solar y se puede ver fácilmente con un
-                    telescopio. Se pueden observar las bandas de nubes, la Gran
-                    Mancha Roja y sus cuatro lunas más grandes (Io, Europa,
-                    Ganímedes y Calisto).
+                    Localizar el cometa: Una vez que hayas configurado el
+                    telescopio, utiliza los ajustes para localizar el cometa en
+                    el cielo. A medida que vayas acercándote, puedes cambiar a
+                    lentes de mayor magnificación para ver más detalles del
+                    cometa.
                   </li>
                   <li>
-                    <strong>Saturno:</strong> Saturno es famoso por sus anillos
-                    y se pueden observar con un telescopio. Se recomienda
-                    utilizar un ocular de mayor magnificación para ver los
-                    detalles en los anillos y la atmósfera del planeta.
-                  </li>
-                  <li>
-                    <strong>Urano:</strong> Urano es un planeta que se puede
-                    observar con un telescopio, pero es difícil de detectar a
-                    simple vista. Se recomienda utilizar un ocular de mayor
-                    magnificación y buscarlo en una zona del cielo sin mucha
-                    contaminación lumínica.
-                  </li>
-                  <li>
-                    <strong>Neptuno:</strong> Neptuno es un planeta que solo se
-                    puede ver con un telescopio potente, ya que es muy débil y
-                    pequeño. Se recomienda utilizar un ocular de alta
-                    magnificación y buscarlo en una zona del cielo sin mucha
-                    contaminación lumínica.
+                    Observar el cometa: Finalmente, cuando hayas localizado el
+                    cometa, tómate tu tiempo para observarlo. Puedes apreciar su
+                    forma y tamaño, así como la cola de gas y polvo que lo
+                    rodea. También puedes tomar notas o fotografías de tu
+                    observación para futuras referencias.
                   </li>
                 </div>
               </ol>
               <p className="px-5">
-                En resumen, para ver cada planeta del sistema solar con un
-                telescopio se necesitan diferentes técnicas y ajustes. Se
-                recomienda esperar el momento adecuado para observarlos y
-                utilizar accesorios como filtros de color para mejorar la
-                visibilidad.
+                Es importante tener en cuenta que la observación de cometas
+                puede ser influenciada por factores externos como la
+                contaminación lumínica o las condiciones climáticas. Por lo
+                tanto, es recomendable elegir una noche clara y oscura para
+                realizar la observación. Además, ten en cuenta que algunos
+                cometas pueden ser más brillantes y fáciles de observar que
+                otros, por lo que es posible que debas tener paciencia y ser
+                perseverante en tu búsqueda.
               </p>
             </div>
             <div id="item-3">

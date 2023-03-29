@@ -3,12 +3,13 @@ import "./Inicio.css";
 import planeta from "../Assets/planeta-tierra.png"
 import Logo from "../Assets/LogoTeltech2.png";
 import { NavLink } from "react-router-dom";
+import { useEffect } from "react";
 
 function Home() {
-
-
-  // document.addEventListener("scroll", SetFixed);
-
+  useEffect(() => {
+   
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <>
       <section className="dark fontSpace parallax">
@@ -22,7 +23,7 @@ function Home() {
         <img
           src={planeta}
           className="w-100 animate__animated animate__fadeInUp"
-          style={{ maxWidth: "2600px", marginTop:"150px" }}
+          style={{ maxWidth: "2600px", marginTop: "150px" }}
           alt="earth"
         ></img>
       </section>
@@ -80,12 +81,14 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="sectionBotones mb-5 parallax">
-        <h2 className="mb-5" style={{fontSize:"50px"}}>Empieza a explorar!</h2>
+      <section className="sectionBotones mb-1 parallax">
+        <h2 className="mb-5" style={{ fontSize: "50px" }}>
+          Empieza a explorar!
+        </h2>
         <div className="w-100 d-flex gap-2 px-5 ">
           <NavLink
             to="/productos"
-            className="w-50 image-zoom text-white"
+            className="w-50 text-decoration-none image-zoom text-white"
           >
             <div className="buttonTelescopios">
               <h1 className="text-center ">Telescopios</h1>

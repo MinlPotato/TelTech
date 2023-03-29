@@ -5,19 +5,14 @@ import { telescopios } from "../Assets/TelescopiosAPI";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Cards from "../Card/Card";
 
-
 function Producto() {
   const { id } = useParams();
 
   const [Producto, setProducto] = useState();
 
-  
-
   useEffect(() => {
     getProductById(id);
   }, [id]);
-
-  
 
   function getProductById(id) {
     const item = telescopios.find((x) => x.id === id);
@@ -25,14 +20,17 @@ function Producto() {
       setProducto(item);
     }
   }
-  
-  
+
+   useEffect(() => {
+     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+   }, []);
+
   console.log(Producto);
   return (
     <>
       {Producto != null ? (
         <>
-          <div className="container mt-5 mb-2 card">
+          <div className="container mt-1 pt-3">
             <Breadcrumb className="d-flex align-items-center">
               <Breadcrumb.Item>
                 <NavLink to="/productos">Productos</NavLink>
@@ -50,7 +48,14 @@ function Producto() {
               style={{ overflow: "auto" }}
               className="d-flex flex-start gap-4 flex-nowrap p-4 "
             >
-              <Cards tipo={Producto.tipoDeTelescopio} id={Producto.id} />
+              <div
+                className="d-flex gap-3"
+                onClick={() => {
+                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                }}
+              >
+                <Cards tipo={Producto.tipoDeTelescopio} id={Producto.id} />
+              </div>
             </div>
           </div>
         </>

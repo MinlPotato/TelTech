@@ -5,6 +5,7 @@ import { Card } from "react-bootstrap";
 import "./Card.css";
 import Carousel from "react-bootstrap/Carousel";
 import Stack from "react-bootstrap/Stack";
+import { useEffect } from "react";
 
 function Cards(props) {
   console.log(props.tipo);
@@ -21,22 +22,22 @@ function Cards(props) {
               return p.imagen == null ? (
                 <img src="" alt="img" className="card-img-top rounded"></img>
               ) : (
-                <NavLink to={`/productos/${p.id}`}>
-                  <img
-                    src={p.imagen}
-                    alt="img"
-                    className=" unzoom"
-                    style={{
-                      objectFit: "cover",
-                      width: "230px",
-                      height: "300px",
-                    }}
-                  ></img>
-                </NavLink>
-              );
-
-                
-              
+                <>
+                  
+                  <NavLink to={`/productos/${p.id}`}>
+                    <img
+                      src={p.imagen}
+                      alt="img"
+                      className=" unzoom"
+                      style={{
+                        objectFit: "cover",
+                        width: "230px",
+                        height: "300px",
+                      }}
+                    ></img>
+                  </NavLink>
+                </>
+              );             
             })}
           </React.Fragment>
         )}
