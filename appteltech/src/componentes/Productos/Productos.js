@@ -29,17 +29,17 @@ useEffect(() => {
         <h2 className="">Telescopios</h2>
         <div
           style={{ gap: "30px" }}
-          className="d-flex flex-start overflow-auto flex-nowrap p-4 "
+          className="d-flex flex-start justify-content-center overflow-auto flex-wrap p-4 "
         >
-          <Cards />
+          <Cards accesorio="No" />
         </div>
         <h2 className="mt-5">Accesorios</h2>
 
         <div
           style={{ gap: "30px" }}
-          className="d-flex flex-start overflow-auto flex-nowrap p-4"
+          className="d-flex flex-start justify-content-center overflow-auto flex-wrap p-4"
         >
-          <Cards />
+          <Cards accesorio="Si" />
         </div>
       </div>
     </>

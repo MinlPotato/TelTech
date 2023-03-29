@@ -9,6 +9,8 @@ function Producto() {
   const { id } = useParams();
 
   const [Producto, setProducto] = useState();
+  const [Accesorio, setAcc] = useState();
+  const [Tipo, setTipo] = useState();
 
   useEffect(() => {
     getProductById(id);
@@ -18,6 +20,8 @@ function Producto() {
     const item = telescopios.find((x) => x.id === id);
     if (item != null) {
       setProducto(item);
+      setAcc(item.Accesorio)
+      setTipo(item.tipoDeTelescopio)
     }
   }
 
@@ -54,7 +58,8 @@ function Producto() {
                   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 }}
               >
-                <Cards tipo={Producto.tipoDeTelescopio} id={Producto.id} />
+                <Cards accesorio = {Accesorio} tipo = {Tipo} id = {Producto.id}/>
+                
               </div>
             </div>
           </div>

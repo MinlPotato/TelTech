@@ -1,13 +1,12 @@
 import React from "react";
 import "./Inicio.css";
-import planeta from "../Assets/planeta-tierra.png"
+import planeta from "../Assets/planeta-tierra.png";
 import Logo from "../Assets/LogoTeltech2.png";
 import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
 
 function Home() {
   useEffect(() => {
-   
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
   return (
@@ -39,35 +38,27 @@ function Home() {
           <div class="row mb-5">
             <div class="col text-start p-4 card">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed
-                velit dignissim sodales ut eu sem integer. Purus semper eget
-                duis at tellus at urna. Pellentesque massa placerat duis
-                ultricies. Egestas fringilla phasellus faucibus scelerisque
-                eleifend donec pretium vulputate sapien. In egestas erat
-                imperdiet sed. Consectetur purus ut faucibus pulvinar elementum
-                integer enim neque. Malesuada pellentesque elit eget gravida cum
-                sociis natoque penatibus et. Ut placerat orci nulla pellentesque
-                dignissim. Scelerisque purus semper eget duis at tellus at.
-                Fames ac turpis egestas maecenas pharetra convallis posuere. At
-                volutpat diam ut venenatis tellus. Malesuada fames ac turpis
-                egestas maecenas. Egestas pretium aenean pharetra magna.
-                Pellentesque diam volutpat commodo sed egestas egestas
-                fringilla. Rhoncus urna neque viverra justo nec. Id consectetur
-                purus ut faucibus pulvinar elementum. Id velit ut tortor
-                pretium. Quam lacus suspendisse faucibus interdum.
+                ¡Bienvenidos al mundo de los telescopios! Estamos emocionados de
+                presentarles nuestra excepcional gama de telescopios y
+                accesorios astronómicos. Nuestros telescopios vienen en una
+                variedad de tamaños y diseños para satisfacer las necesidades de
+                astrónomos aficionados y profesionales por igual. Ya sea que
+                esté buscando un telescopio portátil para observar las estrellas
+                sobre la marcha o un instrumento potente para la observación del
+                cielo profundo, tenemos algo para todos. Pero no nos detenemos
+                solo en los telescopios. También ofrecemos una gama de
+                accesorios como oculares, filtros y monturas para mejorar su
+                experiencia de visualización y ayudarle a sacar el máximo
+                provecho de su telescopio.
                 <hr></hr>
-                Tellus id interdum velit laoreet id donec ultrices. Tincidunt
-                lobortis feugiat vivamus at augue eget. Urna nunc id cursus
-                metus aliquam eleifend. Aliquam nulla facilisi cras fermentum
-                odio. Morbi tincidunt augue interdum velit euismod in
-                pellentesque massa placerat. Adipiscing bibendum est ultricies
-                integer quis auctor elit sed. Congue quisque egestas diam in
-                arcu. Sit amet justo donec enim diam. Vel risus commodo viverra
-                maecenas accumsan. Fusce id velit ut tortor. Vitae et leo duis
-                ut diam quam nulla. Enim nulla aliquet porttitor lacus. Magna
-                eget est lorem ipsum dolor sit amet. Praesent semper feugiat
-                nibh sed pulvinar proin gravida hendrerit.
+                En TelTech entendemos la importancia de la calidad y la
+                confianza. Por eso, solo elegimos las mejores marcas.
+                Nos dedicamos a brindarle un servicio
+                y soporte excepcionales al cliente, asegurando que tenga una
+                experiencia sin problemas y agradable. Así que, ya seas 
+                un astrónomo experimentado o que esté comenzando, lo invitamos a
+                explorar nuestro catalogo de productos y descubrir
+                las maravillas del universo por sí mismo.
               </p>
             </div>
             <div class="col ">

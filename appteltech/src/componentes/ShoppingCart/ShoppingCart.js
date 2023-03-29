@@ -11,6 +11,10 @@ function ShoppingCart() {
       console.log(context);
     }, []);
 
+    useEffect(() => {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+}, []);
+
   return context.cart.length >= 1 ? (
     <>
       <h1 className="text-center font mt-5">Carrito</h1>
