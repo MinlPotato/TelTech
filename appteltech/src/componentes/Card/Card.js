@@ -6,6 +6,7 @@ import "./Card.css";
 import Carousel from "react-bootstrap/Carousel";
 import Stack from "react-bootstrap/Stack";
 import { useEffect } from "react";
+import ScrollHorizontal from "react-scroll-horizontal";
 
 function Cards(props) {
   console.log(props.tipo);

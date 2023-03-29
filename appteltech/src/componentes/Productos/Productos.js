@@ -19,9 +19,7 @@ useEffect(() => {
       {/* <div className="mt-2 ">
         <NavProductos />
       </div> */}
-      <div className="container card mt-3 mb-5" >
-        
-
+      <div className="container card mt-3 mb-5">
         <div className="d-flex justify-content-center">
           <CarouselHome />
         </div>
@@ -31,11 +29,12 @@ useEffect(() => {
         <h2 className="">Telescopios</h2>
         <div
           style={{ gap: "30px" }}
-          className="d-flex flex-start overflow-auto flex-nowrap p-4"
+          className="d-flex flex-start overflow-auto flex-nowrap p-4 "
         >
           <Cards />
         </div>
         <h2 className="mt-5">Accesorios</h2>
+
         <div
           style={{ gap: "30px" }}
           className="d-flex flex-start overflow-auto flex-nowrap p-4"

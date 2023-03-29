@@ -19,6 +19,10 @@ h1, h2, h3, h4, h5, a {
   font-family: 'Space Mono', monospace;
 }
 
+li {
+  margin-bottom: 20px;
+}
+
 .fontSpace {
    font-family: 'Space Mono', monospace;
 }
