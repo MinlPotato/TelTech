@@ -5,7 +5,7 @@ export const telescopios = [
     imagen:
       "https://w7.pngwing.com/pngs/112/480/png-transparent-reflecting-telescope-refracting-telescope-astronomy-spotting-scopes-telescope-objective-refracting-telescope-astronomy.png",
     precio: 2500,
-    tipoDeTelescopio: "Gris",
+    tipoDeTelescopio: "Telescopio Gris",
     Accesorio: "No",
     fabricante: "Celeston",
     paisDeOrigen: "EEUU",
@@ -18,7 +18,7 @@ export const telescopios = [
     imagen:
       "https://w7.pngwing.com/pngs/565/269/png-transparent-refracting-telescope-sky-watcher-reflecting-telescope-optical-telescope-others-angle-refracting-telescope-achromatic-lens.png",
     precio: 1800,
-    tipoDeTelescopio: "Negro",
+    tipoDeTelescopio: "Telescopio Negro",
     Accesorio: "No",
     fabricante: "Watcher",
     paisDeOrigen: "Inglaterra",
@@ -31,7 +31,7 @@ export const telescopios = [
     imagen:
       "https://w7.pngwing.com/pngs/161/346/png-transparent-meade-instruments-refracting-telescope-reflecting-telescope-coma-black-telescope-miscellaneous-tripod-telescope.png",
     precio: 5000,
-    tipoDeTelescopio: "Azul",
+    tipoDeTelescopio: "Telescopio Azul",
     Accesorio: "No",
     fabricante: "Orion",
     paisDeOrigen: "asdasd",
@@ -44,7 +44,7 @@ export const telescopios = [
     imagen:
       "https://w7.pngwing.com/pngs/813/91/png-transparent-goto-orion-telescopes-binoculars-reflecting-telescope-astrography-others-miscellaneous-mirror-aperture.png",
     precio: 2700,
-    tipoDeTelescopio: "Gris",
+    tipoDeTelescopio: "Telescopio Gris",
     Accesorio: "No",
     fabricante: "Orion",
     paisDeOrigen: "Argentina",
@@ -57,7 +57,7 @@ export const telescopios = [
     imagen:
       "https://w7.pngwing.com/pngs/83/21/png-transparent-orion-telescopes-binoculars-reflecting-telescope-equatorial-mount-astronomer-others.png",
     precio: 6000,
-    tipoDeTelescopio: "Negro",
+    tipoDeTelescopio: "Telescopio Negro",
     Accesorio: "No",
     fabricante: "Orion",
     paisDeOrigen: "Argentina",
@@ -70,7 +70,7 @@ export const telescopios = [
     imagen:
       "https://http2.mlstatic.com/D_NQ_NP_641189-MLA44133613502_112020-O.webp",
     precio: 7800,
-    tipoDeTelescopio: "Azul",
+    tipoDeTelescopio: "Telescopio Azul",
     Accesorio: "No",
     fabricante: "Watcher",
     paisDeOrigen: "Inglaterra",
@@ -83,7 +83,7 @@ export const telescopios = [
     imagen:
       "https://http2.mlstatic.com/D_NQ_NP_961902-MLA44161612930_112020-O.webp",
     precio: 3500,
-    tipoDeTelescopio: "Azul",
+    tipoDeTelescopio: "Telescopio Azul",
     Accesorio: "No",
 
     fabricante: "Sky",
@@ -97,7 +97,7 @@ export const telescopios = [
     imagen:
       "https://http2.mlstatic.com/D_NQ_NP_781450-MLA32557570771_102019-O.webp",
     precio: 9000,
-    tipoDeTelescopio: "Negro",
+    tipoDeTelescopio: "Telescopio Negro",
     Accesorio: "No",
 
     fabricante: "Celeston",
@@ -111,7 +111,7 @@ export const telescopios = [
     imagen:
       "https://http2.mlstatic.com/D_NQ_NP_957972-MLA44337759686_122020-O.webp",
     precio: 10000,
-    tipoDeTelescopio: "Gris",
+    tipoDeTelescopio: "Telescopio Gris",
     Accesorio: "No",
 
     fabricante: "Celeston",
@@ -125,7 +125,7 @@ export const telescopios = [
     imagen:
       "https://http2.mlstatic.com/D_NQ_NP_713762-MLA31007785270_062019-O.webp",
     precio: 7000,
-    tipoDeTelescopio: "Gris",
+    tipoDeTelescopio: "Telescopio Gris",
     Accesorio: "No",
 
     fabricante: "Watcher",
@@ -139,7 +139,7 @@ export const telescopios = [
     imagen:
       "https://http2.mlstatic.com/D_NQ_NP_815566-MLA48492950493_122021-O.webp",
     precio: 2000,
-    tipoDeTelescopio: "Negro",
+    tipoDeTelescopio: "Telescopio Negro",
     Accesorio: "No",
 
     fabricante: "Sky",
@@ -153,7 +153,7 @@ export const telescopios = [
     imagen:
       "https://http2.mlstatic.com/D_NQ_NP_724655-MLA48042607786_102021-O.webp",
     precio: 2500,
-    tipoDeTelescopio: "Azul",
+    tipoDeTelescopio: "Telescopio Azul",
     Accesorio: "No",
 
     fabricante: "Orion",

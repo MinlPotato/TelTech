@@ -42,7 +42,7 @@ function ProductoCard(props) {
                 <h5 className="text-start"> Caracteristicas </h5>
                 <ul className="list-group list-group-horizontal mb-1">
                   <li className="list-group-item w-100 text-start text-muted bg-transparent border-primary">
-                    Tipo de telescopio
+                    Tipo de producto
                   </li>
                   <li className="list-group-item w-75 text-muted bg-transparent border-secondary">
                     {tipoDeTelescopio}
